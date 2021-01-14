@@ -1,0 +1,66 @@
+.ellipsis(@rowCount: 1) {
+  & when (@rowCount <=1) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  & when (@rowCount > 1) {
+    display: -webkit-box;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: @rowCount;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+  }
+}
+
+.border-base {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+  }
+}
+
+.border(@dir: bottom, @style: solid, @width: 1px, @color: @border-color) {
+  .border-base();
+
+  & when (@dir =top) {
+    &::after {
+      top: 0;
+      right: 0;
+      left: 0;
+      border-top: @width @style @color;
+    }
+  }
+
+  & when (@dir =bottom) {
+    &::after {
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-bottom: @width @style @color;
+    }
+  }
+
+  & when (@dir =right) {
+    &::after {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-right: @width @style @color;
+    }
+  }
+
+  & when (@dir =left) {
+    &::after {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      border-left: @width @style @color;
+    }
+  }
+}

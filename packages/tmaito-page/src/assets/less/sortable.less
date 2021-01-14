@@ -1,0 +1,61 @@
+.tmaito-sortable {
+  &__inline {
+    .tmaito-sortable__item {
+      display: inline-block;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin: 4px;
+    border: 1px solid @border-color-extra;
+    border-radius: 4px;
+    width: 172px;
+    // z-index受.ant-popover样式影响，
+    // 在popover中使用时需要不低于.ant-popover的z-index
+    // 否则拖拽时会被popover遮盖
+    z-index: 9999;
+    cursor: move;
+
+    .ant-checkbox {
+      &-wrapper {
+        width: 130px;
+      }
+
+      +span {
+        display: inline-block;
+        width: 114px;
+        vertical-align: top;
+        .ellipsis(1);
+      }
+    }
+
+    &:hover {
+      .tmaito-sortable__item-icon {
+        display: block;
+      }
+    }
+
+    &-inner {
+      height: 24px;
+      margin: 2px 8px;
+      line-height: 24px;
+
+      &-index {
+        font-size: @font-size-sm;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 2px;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      display: none;
+      color: @icon-active-color;
+    }
+  }
+}

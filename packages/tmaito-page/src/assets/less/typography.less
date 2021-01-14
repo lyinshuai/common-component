@@ -1,0 +1,54 @@
+.tmaito-typography {
+  background-color: @bg-white;
+
+  >.ant-col {
+    position: relative;
+  }
+
+  &-item {
+    font-size: @font-size-base;
+    color: @text-color-3;
+    vertical-align: top;
+    box-sizing: border-box;
+    line-height: 24px;
+    margin: 4px 0;
+
+    &__label {
+      text-align: right;
+      vertical-align: middle;
+      overflow: hidden;
+      white-space: nowrap;
+
+      &.is-colon {
+        position: relative;
+
+        &::after {
+          content: ':';
+          position: relative;
+          top: -0.5px;
+          margin: 0 8px 0 2px;
+        }
+      }
+
+    }
+
+    &__content {
+      .is-ellipsis {
+        .ellipsis(1);
+      }
+    }
+
+    &__hidden {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      visibility: hidden;
+
+      &-inner {
+        display: inline-block;
+      }
+    }
+  }
+}

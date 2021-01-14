@@ -1,0 +1,36 @@
+.tmaito-pagination {
+  position: relative;
+  padding: 12px 16px;
+  text-align: right;
+  background-color: @bg-white;
+  margin-top: 2px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, .05);
+
+  &-extra {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    height: 24px;
+    line-height: 24px;
+  }
+
+  &:not(.is-extra) {
+
+    .ant-pagination {
+      position: relative;
+
+      &-total-text {
+        position: absolute;
+        left: 0;
+        font-size: @font-size-sm;
+        color: @text-color-9;
+      }
+    }
+  }
+
+  +.tmaito-footer {
+    margin-top: 8px;
+  }
+}

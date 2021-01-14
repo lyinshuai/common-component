@@ -1,0 +1,28 @@
+{
+  "name": "tmaito-editor",
+  "version": "0.0.4",
+  "description": "基于 braft-editor 封装富文本编辑器",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress --config build/webpack.dev.conf.js",
+    "build": "node build/build.js",
+    "prod": "node build/build.js",
+    "analyzer": "node build/analyzer.js"
+  },
+  "author": "menghan.zhu@outlook.com",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "3.26.18",
+    "braft-editor": "^2.3.9",
+    "classnames": "^2.2.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "axios": "^0.19.2",
+    "tmaito-themes": "^1.0.5",
+    "tmaito-utils": "^0.4.6"
+  }
+}

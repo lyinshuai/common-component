@@ -1,0 +1,15 @@
+{
+  "name": "tmaito-themes",
+  "version": "1.0.8",
+  "description": "基于 less 的样式主题",
+  "main": "index.less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "less",
+    "mixins"
+  ],
+  "author": "menghan.zhu <menghan.zhu@outlook.com>",
+  "license": "ISC"
+}

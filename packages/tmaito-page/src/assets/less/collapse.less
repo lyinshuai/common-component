@@ -1,0 +1,21 @@
+.tmaito-collapse {
+  &__content {
+    .transition();
+    overflow: hidden;
+  }
+
+  &__action {
+    height: 32px;
+    line-height: 32px;
+
+    .anticon {
+      transform: rotate(90deg);
+    }
+
+    &.is-extend {
+      .anticon {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

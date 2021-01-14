@@ -1,0 +1,69 @@
+.tmaito-filter {
+  position: relative;
+
+  .ant-form-item {
+    display: flex;
+    margin-bottom: 0;
+
+    &-label {
+      width: auto;
+    }
+
+    &-control-wrapper {
+      flex: 1;
+    }
+  }
+
+  &__action {
+    text-align: right;
+
+    .ant-btn {
+      +.ant-btn {
+        margin-left: 16px;
+      }
+    }
+
+    .tmaito-extra-action {
+      margin-left: 16px;
+    }
+  }
+
+  &__more {
+    &-fields {
+      position: absolute;
+      top: 40px;
+      left: -16px;
+      right: -16px;
+      z-index: 100;
+      transform-origin: top;
+      transition: transform .2s;
+      background: @bg-white;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+      padding: 4px 16px 16px;
+      max-height: calc(100vh - 300px);
+      min-height: 48px;
+      overflow: auto;
+      border-radius: 0 0 8px 8px;
+
+      .field-item {
+        margin: 4px 0;
+      }
+
+      &.is-hidden {
+        transform: scaleY(0);
+      }
+    }
+  }
+
+  &-ranger {
+    .ant-input-number {
+      width: calc((100% - 24px) / 2);
+    }
+
+    &__space {
+      display: inline-block;
+      width: 24px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tmaito-authcode",
+  "version": "0.0.2",
+  "description": "资源权限控制",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress --config build/webpack.dev.conf.js",
+    "build": "node build/build.js",
+    "prod": "node build/build.js",
+    "analyzer": "node build/analyzer.js"
+  },
+  "author": "menghan.zhu@outlook.com",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tmaito-utils": "^0.3.7"
+  }
+}

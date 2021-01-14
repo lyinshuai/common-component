@@ -1,0 +1,153 @@
+.tmaito-page {
+  height: 100%;
+  margin: 0 8px;
+  background-color: @bg-base;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, .05);
+
+  &.is-animate {
+
+    .tmaito-page__container,
+    .tmaito-ant-table {
+      .transition();
+    }
+  }
+
+  &-normal {
+    margin: 0;
+    box-shadow: none;
+
+    .tmaito-page {
+
+      &__header,
+      &__container {
+        padding-left: 0;
+        padding-right: 0;
+        box-shadow: none;
+      }
+    }
+
+    .tmaito-pagination {
+      padding-left: 0;
+      padding-right: 0;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .tmaito-footer {
+      box-shadow: none;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0;
+    }
+  }
+
+  &__header {
+    position: relative;
+    padding: 8px 16px 8px;
+    background-color: @bg-white;
+    border-radius: 0 8px 0 0;
+
+    &.is-empty {
+      padding: 0;
+    }
+
+    &.is-filter-after {
+      .tmaito-tab {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__container {
+    padding: 8px 16px 0;
+    background-color: @bg-white;
+    box-shadow: -8px 0 16px -8px rgba(0, 0, 0, .05), 8px 0 16px -8px rgba(0, 0, 0, .05);
+
+    &.has-radius {
+      border-radius: 0 0 8px 8px;
+    }
+  }
+
+  &__footer {
+    &.pb-8 {
+      padding-bottom: 8px;
+    }
+
+    &.pt-8 {
+      padding-top: 8px;
+    }
+  }
+
+  &__popover-extra {
+    .ant-popover-inner-content {
+      padding: 6px 0;
+      min-width: 110px;
+    }
+
+    .ant-btn {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+
+      &:hover {
+        background-color: @bg-extra;
+      }
+
+      &.ant-btn-sm {
+        font-size: @font-size-sm;
+      }
+    }
+  }
+
+  .arrow-icon {
+    margin-left: 5px;
+    height: 8px;
+    width: 8px;
+    border-bottom: 1px solid @text-color-c;
+    border-right: 1px solid @text-color-c;
+    display: inline-block;
+    transform: translateY(-3px) rotate(45deg);
+    transition: transform .2s;
+
+    &--primary,
+    &.is-dropdown {
+      border-right-color: @primary-color;
+      border-bottom-color: @primary-color;
+    }
+
+    &.is-dropdown {
+      transform: translateY(1px) rotate(225deg);
+    }
+  }
+}
+
+.tmaito-table-sort-column {
+  .anticon-unordered-list {
+    color: @primary-color;
+    font-size: @font-size-lg;
+    vertical-align: text-bottom;
+  }
+}
+
+.popover-tmaito-table-sort {
+  max-height: 360px;
+  overflow-y: auto;
+
+  &__header {
+    margin-bottom: 6px;
+    color: @text-color-3;
+  }
+
+  &__container {
+    max-width: 960px;
+  }
+}
+
+.tmaito-progress {
+  width: 50%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

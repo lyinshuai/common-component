@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-tmaito",
+  "version": "1.3.7",
+  "author": "朱孟韩 <menghan.zhu@outlook.com>",
+  "homepage": "https://github.com/zmh7057/tmaito#readme",
+  "license": "ISC",
+  "description": "eslint config for tmaito",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmh7057/tmaito.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zmh7057/tmaito/issues"
+  },
+  "dependencies": {
+    "eslint-config-tmaito-base": "^1.1.8",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8"
+  },
+  "gitHead": "f30a49921e5121c14590dd850a0c89fd59512ed3"
+}

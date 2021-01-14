@@ -1,0 +1,57 @@
+.align {
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}
+
+.num {
+  display: inline-block;
+  margin: 0 2px;
+  font-weight: 500;
+  font-size: @font-size-base;
+}
+
+.link {
+  display: inline-block;
+  margin: 0 5px;
+  color: @link-color;
+
+  &:hover {
+    cursor: pointer;
+    color: @link-active-color;
+  }
+}
+
+.not-allowed {
+  display: inline-block;
+  margin: 0 5px;
+  color: @text-color-c  !important;
+
+  &:hover {
+    cursor: not-allowed !important;
+  }
+}
+
+.primary {
+  color: @primary-color;
+}
+
+.success {
+  color: @success-color;
+}
+
+.error {
+  color: @error-color;
+}
+
+.warning {
+  color: @warning-color;
+}

@@ -1,0 +1,43 @@
+.tmaito-divider {
+  position: relative;
+  display: inline-block;
+  font-size: @font-size-base;
+  line-height: 24px;
+  font-weight: 500;
+  color: @text-color-6;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 16px;
+    border-radius: 2px;
+    margin-right: 6px;
+    vertical-align: text-bottom;
+    background-color: @bg-base;
+  }
+
+  &-danger {
+    &::before {
+      background-color: @error-color;
+    }
+  }
+
+  &-warning {
+    &::before {
+      background-color: @warning-color;
+    }
+  }
+
+  &-success {
+    &::before {
+      background-color: @success-color;
+    }
+  }
+
+  &-primary {
+    &::before {
+      background-color: @primary-color;
+    }
+  }
+}

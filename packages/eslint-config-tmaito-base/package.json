@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-tmaito-base",
+  "version": "1.1.8",
+  "description": "> TODO: description",
+  "author": "朱孟韩 <menghan.zhu@outlook.com>",
+  "homepage": "https://github.com/zmh7057/tmaito#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmh7057/tmaito.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/zmh7057/tmaito/issues"
+  },
+  "dependencies": {
+    "babel-preset-airbnb": "^5.0.0",
+    "confusing-browser-globals": "^1.0.9",
+    "eslint-plugin-html": "^6.0.3",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
+  },
+  "gitHead": "f30a49921e5121c14590dd850a0c89fd59512ed3"
+}
