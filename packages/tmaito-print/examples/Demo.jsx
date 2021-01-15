@@ -5,46 +5,33 @@ import { Form, Input, Button } from 'antd';
 import './assets/less/index.less';
 
 
-const { Item } = Form;
-const Demo = (props) => {
-  const { form } = props;
-  const { getFieldDecorator, validateFields } = form;
+const print = new Print();
+class Pages extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-  const handleSubmit = () => {
-    validateFields((err, values) => {
-      if (err) {
-        return;
-      }
-      console.log(values);
+  onClick = () => {
+    print.output({
+      printNode: document.querySelector('#printContent'), // 打印区域（Element）
+      rootNode: document.querySelector('.invoice-print') // 打印根节点（Element）无参数根节点为body
     });
   };
 
-  return (
-    <div className="demo">
-      <Form>
-        <Item label="标题">
-          {getFieldDecorator('title', {
-            rules: [{
-              required: true,
-              message: '请输入标题'
-            }]
-          })(
-            <Input placeholder="请输入标题" />
-          )}
-        </Item>
-        <Item label="正文">
-          {getFieldDecorator('content', {
-            rules: [{
-              required: true,
-              message: '请输入正文内容'
-            }]
-          })(
-            <Input placeholder="请输入正文内容" />
-          )}
-        </Item>
-      </Form>
-      <Button onClick={handleSubmit}>提交</Button>
-    </div>
-  );
-};
-export default Form.create()(Demo);
+  render() {
+    return (
+      <div id="printContent">
+        <div id="print-test">
+          <div className="invoice-print">
+            <div onClick={this.onClick} id="print">
+              <p>Some contents...</p>
+              <p>Some contents...结束</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Pages;
