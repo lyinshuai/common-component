@@ -1,0 +1,23 @@
+@import '@xforceplus/themes-sass';
+.xf-draggable-col__dnd {
+  padding: 2px 10px;
+
+  &.is-dragging .inner-col{
+    background: #e6f7ff;
+    border: 1px solid #ccdde4;
+  }
+  
+  .inner-col {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #e6f7ff;
+    background: $--color-white;
+  }
+}
+
+.sorted-cols-filter {
+  transition: background .4s;
+  &.is-dragging-over {
+    background: $--color-white-ter;
+  }
+}

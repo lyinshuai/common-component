@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import React from 'react';
-import Editor from '../src';
+import Print from '../src';
 import { Form, Input, Button } from 'antd';
 import './assets/less/index.less';
 
@@ -39,7 +39,7 @@ const Demo = (props) => {
               message: '请输入正文内容'
             }]
           })(
-            <Editor placeholder="请输入正文内容" />
+            <Input placeholder="请输入正文内容" />
           )}
         </Item>
       </Form>

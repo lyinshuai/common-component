@@ -1,0 +1,29 @@
+{
+  "name": "tmaito-sorted-cols-filter",
+  "version": "0.0.1",
+  "description": "SortableFilter 可排序筛选器",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress --config build/webpack.dev.conf.js",
+    "build": "node build/build.js",
+    "prod": "node build/build.js",
+    "analyzer": "node build/analyzer.js"
+  },
+  "author": "menghan.zhu@outlook.com",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tmaito-themes": "^1.0.5",
+    "antd": "^3.11.2",
+    "classnames": "^2.2.6",
+    "react-beautiful-dnd": "^9.0.2",
+    "react-sortable-hoc": "^0.8.4",
+    "styled-components": "^5.2.1"
+  }
+}
