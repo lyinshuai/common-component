@@ -2,7 +2,7 @@
   "name": "eslint-config-tmaito-base",
   "version": "1.1.8",
   "description": "> TODO: description",
-  "author": "朱孟韩 <menghan.zhu@outlook.com>",
+  "author": "liyinshuai",
   "homepage": "https://github.com/zmh7057/tmaito#readme",
   "license": "ISC",
   "main": "index.js",

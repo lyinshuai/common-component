@@ -13,7 +13,7 @@
     "prod": "node build/build.js",
     "analyzer": "node build/analyzer.js"
   },
-  "author": "menghan.zhu@outlook.com",
+  "author": "liyinshuai",
   "license": "ISC",
   "dependencies": {
     "antd": "3.26.18",
